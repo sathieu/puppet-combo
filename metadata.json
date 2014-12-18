@@ -1,0 +1,14 @@
+{
+  "name": "sathieu-combo",
+  "version": "0.1.0",
+  "author": "Mathieu Parent <math.parent@gmail.com>",
+  "summary": "Describe and deploy complete software stacks using exported resources",
+  "license": "Apache-2.0",
+  "source": "https://github.com/sathieu/puppet-combo.git",
+  "project_page": "https://github.com/sathieu/puppet-combo",
+  "issues_url": "https://github.com/sathieu/puppet-combo/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
