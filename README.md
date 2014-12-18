@@ -15,41 +15,49 @@
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+"All problems in computer science can be solved by another level of indirection, except of course for the problem of too many indirections."
+
+-- David Wheeler
+
+You follow best practises, and use roles and profiles, but you still consider your config too bloated.
+You want to deploy common software stacks, like a revere-proxy, and application server and a database.
+
+This module provides tools and convention to describe and deploy software stacks using exported resources.
 
 ## Module Description
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
+This module is a thin layer above standard puppet modules, but you can also use it above your own modules.
 
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+Current supported modules:
+* TODO
+
+Planned support:
+* puppetlabs-apache
+* puppetlabs-mysql
+* puppetlabs-postgresql
 
 ## Setup
 
 ### What combo affects
 
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute on the system it's installed on.
-* This is a great place to stick any warnings.
-* Can be in list or paragraph form.
+Nothing directly, but it calls third-party modules which do.
 
-### Setup Requirements **OPTIONAL**
+### Setup Requirements
 
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
+Combo uses exported resources. See: <https://docs.puppetlabs.com/guides/exported_resources.html>.
 
 ### Beginning with combo
 
-The very basic steps needed for a user to get the module up and running.
+Quick start:
 
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you may wish to include an additional section here: Upgrading
-(For an example, see http://forge.puppetlabs.com/puppetlabs/firewall).
+```puppet
+
+class profile::app_glpi {
+
+}
+
+```
+
 
 ## Usage
 
